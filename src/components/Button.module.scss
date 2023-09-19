@@ -1,0 +1,43 @@
+@import '../styles/variables';
+
+.default {
+  @include button;
+}
+
+.small {
+  @include reset;
+  text-align: left;
+
+  color: rgba($dark, 0.75);
+  padding: 0px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  transform: scale(1);
+  &:hover {
+    background-color: $dark;
+    color: white;
+
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.big {
+  @include reset;
+  text-align: left;
+  font-size: 18px;
+  color: rgba($dark, 0.75);
+  padding: 0px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  transform: scale(1);
+
+  &:hover {
+    background-color: $dark;
+    color: white;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}

@@ -1,0 +1,41 @@
+$background-color: #fff;
+
+$dark: #3B3B3B;
+
+$font-main: Marcellus SC;
+$font-sub: Marcellus;
+
+@mixin button {
+  padding: 10px;
+  border: none;
+  
+  font-family: $font-main;
+  font-size: 18px;
+
+  background-color: white;
+  color: $dark;
+
+  transition: all 0.4s ease;
+  transform: scale(1);
+  &:hover {
+    background-color: $dark;
+    color: white;
+    cursor: pointer;
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+@mixin reset {
+
+  border: none;
+  
+  font-family: $font-main;
+
+  background-color: white;
+  color: $dark;
+
+  transition: all 0.4s ease;
+  transform: scale(1);
+}
